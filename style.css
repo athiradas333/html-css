@@ -981,12 +981,36 @@ p,a,li,span{
 .disflexrow{
   display:flex;
   justify-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top:20px;
+  column-gap:0;
 
 
 }
-.disflexrow h3{
-  font-size:16px;
-  font-family:"TTNorms-Regular";
+.disflexrow div{
+  /* font-size:16px; */
+  /* font-family:"TTNorms-Regular";
+  font-weight:600; */
+  width: 33.33%;
+  min-width:30%;
+  height:40px;
+}
+
+.disflexrow .grey{
+    color:gray;
+    /* width: 33.33%; */
+    
+}
+.disflexrow .boldline{
+  padding-bottom:20px;
+  border-bottom:3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.disflexrow .grey{
+  padding-bottom:20px;
+  border-bottom:2px solid grey;
 }
