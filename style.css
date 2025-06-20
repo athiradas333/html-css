@@ -892,12 +892,18 @@ p,a,li,span{
   display:flex;
   flex-direction:row;
   overflow-x: scroll;
+
+  
+  /* overflow-y:none; */
   width:100%;
   background-color: rgb(254,241,238);
-  height:422px;
+  /* height:422px; */
+  height:430px;
   
 }
-
+ .scrollt::-webkit-scrollbar {
+  display: none;
+ }
 
 
 .firstdiv{
@@ -945,3 +951,42 @@ p,a,li,span{
   text-align:center;
 }
 
+.firstcontent h5{
+  font-size:12px;
+  font-family:'TTNorms-Regular';
+  color:black;
+  margin-top:10px;
+}
+
+.displaycontentlist{
+  height:838px;
+  padding:24px 16px;
+
+}
+
+.displaycontentlist h1{
+  font-size:32px;
+  font-family:'TTNorms-Bold';
+  text-align:center;
+  width:100%;
+  margin-bottom:10px;
+
+}
+.disflex{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.disflexrow{
+  display:flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top:20px;
+
+
+}
+.disflexrow h3{
+  font-size:16px;
+  font-family:"TTNorms-Regular";
+}
