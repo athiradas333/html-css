@@ -1066,7 +1066,7 @@ p,a,li,span{
   flex-direction:column;
   background-color:#1a1a1a;
   /* height:2270px; */
-  height:2500px;
+  height:2325px;
   
 
 
@@ -1089,7 +1089,7 @@ p,a,li,span{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  column-gap:12px;
+  column-gap:8px;
   row-gap:12px;
   text-align:center;
 }
@@ -1152,7 +1152,7 @@ p,a,li,span{
 .contentslast{
   display:flex;
   flex-direction:column;
-  column-gap:12px;
+  column-gap:8px;
 
 }
 .cinisec{
@@ -1173,7 +1173,7 @@ p,a,li,span{
 .cinisec a{
   color:#C4C4C4;
   font-size:14px;
-  margin-top:15px;
+  margin-top:8px;
   text-decoration:none;
 }
 
