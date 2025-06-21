@@ -1065,7 +1065,8 @@ p,a,li,span{
   display:flex;
   flex-direction:column;
   background-color:#1a1a1a;
-  height:2270px;
+  /* height:2270px; */
+  height:2500px;
   
 
 
@@ -1104,4 +1105,142 @@ p,a,li,span{
   font-size:14px;
   margin-top:15px;
   text-decoration:none;
+}
+
+.colist2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.secicon{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+}
+
+.seciconpad{
+  padding-top:32px;
+  display:flex;
+  flex-direction:column;
+}
+.svgdiv{
+  display:flex;
+  justify-content:center;
+  background-color: rgb(73,73,73);
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  cursor:pointer;
+  padding:2px 8px;
+
+}
+.svgdiv1{
+   display:flex;
+  justify-content:center;
+  background-color: rgb(73,73,73);
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  cursor:pointer;
+  padding:2px 8px;
+  margin-top:12px;
+}
+
+.contentslast{
+  display:flex;
+  flex-direction:column;
+  column-gap:12px;
+
+}
+.cinisec{
+  display:flex;
+  flex-direction:column;
+  padding-top:32px;
+  text-align:center;
+}
+
+.cinisec h2{
+  margin-bottom:8px;
+  font-size:16px;
+  font-family:'TTNorms-Regular';
+  font-weight:600;
+  color:white;
+}
+
+.cinisec a{
+  color:#C4C4C4;
+  font-size:14px;
+  margin-top:15px;
+  text-decoration:none;
+}
+
+
+.foot{
+  /* padding-top:32px; */
+  padding-top:40px;
+  padding-bottom:32px;
+  align-items:center;
+  justify-content:space-between;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+}
+.foot1{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+
+}
+.foot1 .svg33{
+  margin-left:12px;
+}
+
+.foot2{
+  display:flex;
+  flex-wrap:wrap;
+  text-align:center;
+  padding:15px 12px;
+}
+.innerfoot{
+  width:155px;
+  height:35px;
+  background-color:#F1F1F1;
+  border-radius:999px;
+  display: flex;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  justify-content: flex-start;
+  /* font-size:15px;
+  font-family:'TTNorms-Regular'; */
+  
+}
+.innerfoot h4{
+   font-family:'TTNorms-Regular';
+    font-size:15px;
+    margin-left:13px;
+
+}
+.innerfoot .globe{
+  margin-left:9px;
+}
+
+.foot3{
+  display:flex;
+  justify-content:center;
+  margin-top:12px;
+  max-width:100%;
+  text-align:center;
+  flex-wrap:wrap;
+  height:36px;
+  column-gap: 1px;
+}
+
+.foot3 h6{
+  color:#C4C4C4;
+  font-size:12px;
+  margin-left:16px;
 }
