@@ -1215,6 +1215,7 @@ p,a,li,span{
   display: flex;
   justify-content:center;
   text-align:center;
+  
   align-items:center;
   justify-content: flex-start;
   /* font-size:15px;
@@ -1224,9 +1225,11 @@ p,a,li,span{
 .innerfoot h4{
    font-family:'TTNorms-Regular';
     font-size:15px;
+    /* font-size:12px; */
     margin-left:13px;
     width:82.02px;
     height:18px;
+    white-space: no wrap;
 
 }
 .innerfoot .globe{
