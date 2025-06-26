@@ -1575,7 +1575,7 @@ width:100%;
   
 }
 
-.scrollt{
+.scrollchild{
   display:flex;
   flex-direction:row;
   overflow-x: scroll;
@@ -1972,3 +1972,7 @@ width:100%;
 
 
 
+
+
+
+/* -------------main css------------ */

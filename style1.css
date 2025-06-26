@@ -370,16 +370,77 @@
 
     }
     .scrollchild{
+        box-sizing:border-box;
         display:flex;
         flex-flow:wrap;
         width:100%;
         max-width:1184px;
-        box-sizing:border-box;
+        overflow-x: unset;
+        
     }
     
       .scrollchild .firstdiv{
-       
+         display:flex;
+         flex-direction:column;
+         box-sizing:border-box !important;
+         max-width:50% !important;
+         min-width: 50% !important;
+         padding:20px !important;
+         margin:0 !important;
+         align-items:center;
+         
       }
+
+      .scrollchild .imgf{
+        width:100%;
+      }
+
+      .scrollchild .imgf img {
+       
+        height:180px;
+        object-fit:cover;
+        box-sizing:border-box;
+        object-position: center center ;
+         width:100%;
+
+      }
+
+       .scrollchild .firstdiv .firstcontent h1 {
+           line-height:28.1px;
+           font-size:24px;
+           margin:20px 0 0 0;
+           max-width:90%;
+           font-weight:700;
+
+       }
+
+        .scrollchild .firstdiv .firstcontent h3{
+            margin-top:10px;
+            font-size:14px;
+            font-weight:500;
+            line-height:20px;
+            letter-spacing:0.1px;
+        }
+
+        .scrollchild .sbeauty{
+            width:105.91px;
+        }
+        
+        .scrollchild .sflowers{
+            width:111.5px;
+        }
+
+        .scrollchild .salcohol button{
+            width:133.5px;
+        }
+
+        .scrollchild .firstdiv .firstcontent h5 {
+             font-weight:900;
+             margin-top:10px;
+             font-size:12px;
+             line-height:18px;
+        }
+        
     
     
     
