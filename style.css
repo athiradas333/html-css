@@ -369,7 +369,9 @@ p,a,li,span{
   
   
 }
-
+.option2{
+  display:none;
+}
 
 
 
@@ -632,6 +634,10 @@ p,a,li,span{
   
 
 }
+
+.buttoncontainer1{
+  display:none !important;
+}
 .buttonlog{
    background-color:white;
     padding:6px 13px;
@@ -658,6 +664,12 @@ p,a,li,span{
   margin-left:-1px;
 }
 
+.icon11{
+  display:none;
+}
+.invi{
+  display:none;
+}
 
 
 
@@ -959,28 +971,31 @@ margin-bottom:0;
 }
 
 .contents{
-  padding:16px;
-  display: flex;
+  /* padding:16px; */
+  /* display: flex;
   flex-direction: column;
-  justify-self: center;
-  max-width:100%;
-  margin:40px 0;
-  padding:8px;
-  
+  justify-self: center; */
+  /* max-width:100%; */
+  /* margin:40px 0; */
+  /* padding:8px; */
   /* margin-top:40.5px;
   margin-bottom:40px; */
-
-  /* --------------- */
-
   /* margin-top:40px;
   margin-bottom:40px; */
-  padding-left:8px;
-  padding-right:8px;
+  /* padding-left:8px;
+  padding-right:8px; */
   
  
-  
-
-  /* margin-left:45px; */
+/* ---------------------------- */
+display:flex;
+flex-direction:column;
+box-sizing: border-box;
+justify-content: center;
+align-items:center;
+padding:8px;
+margin-top:40px;
+margin-bottom:40px;
+width:100%;
   
 
 
@@ -992,24 +1007,32 @@ margin-bottom:0;
   /* height:736px; */
   box-sizing: border-box;
   /* margin-top:7px; */
+  /* min-width:360px; */
+
 }
+
+
+
 
 
 
 .dasher {
   display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
-
+  /* ------------------ */
+  /* align-items:flex-start;
+  justify-content: space-between; */
+/* ------------------------------- */
   /* changed */
   /* column-gap: 35px; */
 
   /* max-width:388px; */
   /* margin: 30px auto; */
   padding: 16px;
-  margin-bottom: 0;
-  margin-top:0;
-  width: 402px;
+  /* -------------------------- */
+  /* margin-bottom: 0; */
+  /* margin-top:0;
+  /* width: 402px; */ 
+  /* ------------------ */
 
   /* max-width:100%;
   min-width:360px;
@@ -1020,23 +1043,24 @@ margin-bottom:0;
   padding-left:16px;
   padding-right:16px;
   box-sizing: border-box;
+  flex-wrap: nowrap;
+  max-width:100%;
 
-
+  /* min-width:360px; removed for mobile */
+  /* width:402px; */
+  /* width:360px; */
   /* ------------ */
+  /* min-width:360px; */
 
-
+   /* min-width:360px; */
 
   /* width:402px; */
 }
 
 .dasherimg {
-  /* width: 88px; */
-  height: 88px;
-
-  /* flex-shrink: 0; */
-  /* margin-right:32px; */
-  /* changes */
-  /* margin-left:-2px; */
+   display:block;
+   box-sizing:border-box;
+   margin-right:32px;
 }
 
 .dasherimg img {
@@ -1044,19 +1068,27 @@ margin-bottom:0;
   height: 100%; */
   width:88px;
   height:88px;
-  object-fit: contain;
+  /* object-fit: contain; */
 
   /* added */
-  display:block;
+  /* display:block; */
   box-sizing:border-box;
+  overflow-clip-margin: content-box;
+  overflow-x:clip ;
+  overflow-y: clip;
   
-}
+}                           
 
 .dashercontent{
   display:flex;
   flex-direction: column;
-  width:250px;
-  justify-content: flex-start;
+  /* max-width:250px; */
+  flex-wrap: nowrap;
+  box-sizing: border-box;         
+  /* justify-content: flex-start; */
+
+  max-width:250px;
+  /* min-width:360px; */
   
   
 
@@ -1069,9 +1101,14 @@ margin-bottom:0;
 
  
 }
+.dashwidth{
+    display:block;
+    box-sizing:border-box;
+    max-width:100%;
+}
 
-
-
+    
+  
 .dashercontent h1 {
 
   font-size:32px;
@@ -1095,35 +1132,49 @@ margin-bottom:0;
  
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .dashercontent h3 {
-  font-size: 18px;
+  /* font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.15px;
   text-align:left;
-  color: #000;
+  color: #000; */
+
   /* margin-bottom: 16px; */
-  font-family:'TTNorms-Regular';
+
+  /* font-family:'TTNorms-Regular'; */
+
   /* font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-  font-weight:600;
+
+  /* font-weight:600;
+  box-sizing: border-box; */
+
+
+  /* ----------------------- */
+
+  display:block;
   box-sizing: border-box;
- 
+  /* font-family:'TTNorms-Medium'; */
+   font-family: 'Roboto', sans-serif;
+   font-family:'TTnorms-Regular';
+  /* font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  /* font-size:16.5px; */
+  font-size:18px;
+  /* font-size:16.5px; */
+  font-weight:600;
+  letter-spacing: 0.14px;
+  /* letter-spacing:0.30px;       */
+  /* font-size:18px; */
   
- 
-
-  /* changes */
-  /* margin-top:4.5px;
-    
-
-
-  padding-bottom:10px;
-    /* margin-bottom:20px;
-     margin-top:-10px;
-      max-width:250px; */
- 
-  /* -------------- */
-  /* max-width:100%; */
-
-  
+  /* letter-spacing:-0.01px;       */
+  text-align:left;
+  line-height:24px;
+  color: #161616;
+  /* min-width:360px; */
+  /* word-spacing:2px; */                                                
+  /* max-width:250px; */
  
 }
 
@@ -1179,13 +1230,17 @@ margin-bottom:0;
 .imgportion{
   /* background:white; */
   width:100%;
-  height:454px;
+
+
+  /* height:454px; */
 
 
   position:relative;
   z-index:1;
-
-  margin-top:15px;
+  
+  /* margin-top:29.5px; */
+ 
+  /* margin-top:15px; */
 
 }
           
@@ -1196,7 +1251,7 @@ margin-bottom:0;
      padding-bottom:20px;
      padding-left:20px;
      padding-right:20px;
-     padding-top:10px;
+     padding-top:20px;
      /* max-width:100%; */
 
      min-width:90%;
@@ -1239,10 +1294,10 @@ margin-bottom:0;
  margin-top:10px;
  font-size:18px;
  font-family:'TTNorms-bold';
- font-weight:300;
- /* line-height:8px; */
+ font-weight:700;
+ line-height:22px;
  /* word-spacing:1.5px; */
- /* letter-spacing: 1px; */
+ letter-spacing: -0.01px;
 }         
 
 .textportion p{
@@ -1252,6 +1307,7 @@ margin-bottom:0;
   line-height:20px;
   font-family:'TTNorms-Regular';
   margin-top:10px;
+  display:block;
 
 }
 .buttona {               
@@ -1273,15 +1329,16 @@ margin-bottom:0;
 }
 .imgportion1{
  /* height:722px; */
- height:722px;
+ /* height:722px; */
   padding-top:320px;
   padding-left:20px;
   padding-right:20px;
   
-  /* padding-bottom:20px; */
+  
+  padding-bottom:20px;
   background-color:rgb(254, 241, 238);
   
-  margin-top:-300px;
+  /* margin-top:-300px; -new removed */
   position:relative;
   z-index:0;
   
@@ -1291,6 +1348,14 @@ margin-bottom:0;
   
 
 
+}
+
+.imgportion1 .textportion p{
+  word-spacing: 1px;
+}
+
+.imgportion1 .buttona{
+  width:114.115px;
 }
 .titlex{
   display:flex;
@@ -1315,17 +1380,36 @@ margin-bottom:0;
   background-repeat:repeat;
   background-size:cover;
   background-position: center;
-  width:100%;   
+  /* width:100%;   -removed
+  
+  /* ------------------------------------ */
+  background-attachment:scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  display:block;
+  box-sizing:border-box;
+  position:relative;
+
+
+
+
   
 }
 .grcontent{
-  width:100%;
-  height:100%;
+  /* width:100%;
+  height:100%; */
+
   background-color:rgba(30,30,30,0.6);
   position:relative;
   z-index:1;
   display:flex;
   justify-content:center;
+
+  box-sizing: border-box;
+  align-content:center;
+  height:350px;
 
 }
 .grcflex{
@@ -1336,6 +1420,8 @@ margin-bottom:0;
   /* justify-content:center; */
   margin-top:70px;
   margin-bottom:70px;
+  box-sizing: border-box;
+  text-align:center;
   
 }
 
@@ -1347,6 +1433,8 @@ margin-bottom:0;
   color:white;
   max-width:90%;
   margin:20px 0px 0px;
+  letter-spacing: -0.01px;
+  line-height:28px;
   
 }
 
@@ -1356,6 +1444,8 @@ margin-bottom:0;
    margin-top:10px;
    text-align:center;
    color:white;
+   letter-spacing:-0.01px;
+   line-height:22px;
 
 
 }
@@ -1363,26 +1453,98 @@ margin-bottom:0;
 .grcflex h5{
   font-size:14px;
   font-family:'TTNorms-Regular';
-  margin-top:15px;
+  margin-top:10px;
   text-align:center;
   color:white;
   font-weight:500;
+  line-height:20px;
+  letter-spacing:0.1px;
 
 }
 
 .ec3{
-  margin-top:-50px;
+  /* margin-top:-50px; */
 }
 .imgportion5{
   /* background:white; */
-  width:100%;
-  height:400px;
+   display:block;
+   box-sizing: border-box;
+
+  /* width:100%;
+  height:400px; */
 
 
-  position:relative;
-  z-index:1;
+  /* position:relative;
+  z-index:1; */
 
 }
+
+.imgportion1 p{
+  letter-spacing: 0.20px;
+}
+
+.grcflex .buttona {
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:-0.01px;
+  line-height:20px;
+  width:123.896px;
+}
+
+.imgportion5 .buttona {
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:-0.01px;
+  line-height:20px;
+  width:90.7708px;
+}
+.imgportion5 .ec{
+  margin-bottom:0px;
+}
+
+.imgportion5 .textportion {
+    /* justify-content:center; */
+    /* margin:0 auto; */
+   
+    /* max-width:575.79px; */
+    margin:0 auto;
+ }
+
+ .imgportion5 .textportion p{
+  
+  letter-spacing:0.10px;
+ }
+
+
+
+.imgportion5 .textportion h1{
+  display:block;
+  box-sizing: border-box;
+  line-height:28px;
+  font-size:24px;
+  font-weight:700px;
+  letter-spacing:-0.01px;
+  /* margin-top:20px; */
+  max-width:90%;
+  text-align: left;
+}
+
+.impgportion5 .textportion p{
+  display:block;
+  box-sizing: border-box;
+ margin-top:10px;
+}
+
+.impgportion5 .textportion .buttona{
+  margin-top:20px;
+  box-sizing: border-box;
+}
+
+#grow{
+  width:139.698px;
+}
+
+
 
 .bscroll{
   display:flex;
@@ -1392,13 +1554,14 @@ margin-bottom:0;
   width:100%;
   /* align-items:center; */
   text-align:center;
-  margin-top:15px;
-  height:116px;
+  /* margin-top:15px; */
+  /* height:116px; */
 }
 .bscroll h1{
   font-size:24px;
   font-family:'TTNorms-Bold';
   max-width:300px;
+  letter-spacing:-0.01px;
   
 }
 
@@ -1450,11 +1613,24 @@ margin-bottom:0;
 
 }
 
+
+.scrollt .firstdiv .firstcontent .buttona{
+  width:105.938px;
+}
+#restock{
+  width:110.615px;
+}
+
+#pets{
+  width:133.531px;
+}
 .firstcontent h1{
-  /* max-width:90%; */
+  max-width:90%;
   margin-top:20px;
   text-align:center;
   font-size:24px;
+  line-height:28px;
+  letter-spacing:-0.01px;
   font-family:'TTNorms-Bold';
 }
 
@@ -1463,6 +1639,10 @@ margin-bottom:0;
   font-family:'TTnorms-Regular';
   margin-top:10px;
   text-align:center;
+  font-weight:500;
+  line-height:20px;
+  letter-spacing:-0.01px;
+
 }
 
 .firstcontent h5{
@@ -1473,17 +1653,20 @@ margin-bottom:0;
 }
 
 .displaycontentlist{
-  height:838px;
+  /* height:838px; */
   padding:24px 16px;
 
 }
 
 .displaycontentlist h1{
-  font-size:32px;
+  font-size:18px;
   font-family:'TTNorms-Bold';
   text-align:center;
   width:100%;
-  margin-bottom:10px;
+  margin-bottom:20px;
+  line-height: 22px;
+  letter-spacing:-0.01px;
+  font-weight:700;
 
 }
 .disflex{
