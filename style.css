@@ -638,6 +638,13 @@ p,a,li,span{
 .buttoncontainer1{
   display:none !important;
 }
+
+.buttoncontainer2{
+  display:none !important;
+}
+
+
+
 .buttonlog{
    background-color:white;
     padding:6px 13px;
@@ -1001,13 +1008,16 @@ width:100%;
 
 }
 .contents1{
-  display:flex;
+  /* display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:center; */
   /* height:736px; */
   box-sizing: border-box;
   /* margin-top:7px; */
   /* min-width:360px; */
+
+  
+  /* width: fit-content; */
 
 }
 
@@ -1073,9 +1083,9 @@ width:100%;
   /* added */
   /* display:block; */
   box-sizing:border-box;
-  overflow-clip-margin: content-box;
+  /* overflow-clip-margin: content-box;
   overflow-x:clip ;
-  overflow-y: clip;
+  overflow-y: clip; */
   
 }                           
 
@@ -1467,8 +1477,8 @@ width:100%;
 }
 .imgportion5{
   /* background:white; */
-   display:block;
-   box-sizing: border-box;
+   /* display:block;
+   box-sizing: border-box; */
 
   /* width:100%;
   height:400px; */
@@ -1720,6 +1730,12 @@ width:100%;
   flex-direction:column;
   row-gap:19px;
   margin-top:22px;
+
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:16px;
+  width:100%;
 
 }
 
